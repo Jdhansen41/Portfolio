@@ -1,0 +1,44 @@
+h1{
+  font-size: 90px;
+  margin: 100px auto;
+  text-align: center;
+}
+#dev{
+  opacity: 1;
+  display: inline;
+  font-size: 85px;
+  color: #33b5e5;
+  margin-left: 8px;
+    transition: opacity 600ms linear;
+}
+#contain{
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#intro{
+  margin-bottom: 100px; 
+  text-align: center;
+}
+
+p span{
+ margin-left: 30px;
+}
+footer{
+  width: 100%;
+  position: relative;
+  height: 70px;
+  background: #ededed;
+  margin-bottom: 0px;
+  margin-top: 100px;
+  padding: 10px;
+  text-align: right;
+  color: #222222;
+}
+
+#heroku{
+ width: 20px;
+  height: 30px;
+}

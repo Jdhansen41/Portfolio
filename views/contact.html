@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/burger.css">
+    <link rel="stylesheet" href="/contact.css">
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" id="toggleMenu" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="/"><li>Home</li></a>
+      <a href="/projects"><li>Projects</li></a>
+      <a href="/contact"><li>Contact</li></a>
+    </ul>
+  </div>
+</nav>
+<main>
+  <!--Contact Section -->
+<div id="contact">
+  <h1>Contact Me</h1>
+  
+  <span><i class="far fa-envelope fa-5x"></i></span>
+  <p style="margin-top: 20px; margin-bottom: 50px;">As a self-taught Front End Developer, I'm always on the lookout for new ideas and networking opportunities. Feel free to shoot me over an email, any and all feedback or comments are greatly appreciated. Don't be shy!</p><hr>
+  
+  <form  action="/email" method="POST">
+      <div class="form-group">
+        <label>Subject</label>
+        <input class="form-control" type="text" required name="subject" placeholder="Email Subject">
+      </div>
+      <div class="form-group">
+        <label>Your Email</label>
+        <input class="form-control" type="text" required name="from" placeholder="Please enter your email">
+        <small id="emailHelp" class="form-text text-muted">Your email won't be used for any other purpose other than to respond to your messages.</small>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea class="form-control" rows="3" type="text" required name="body" placeholder="Type your message here..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-info">Send Message</button>
+    </form>
+  <div id="phone">
+    <span><i class="fas fa-phone fa-2x"></i></span><p> - 972.754.7394</p>
+  </div>
+  
+  </div>
+  
+</main>
+<footer><a href="https://github.com/Jdhansen41" target="_blank">
+  <span><i class="fab fa-github fa-3x"></i></span></a>
+  <a href="https://www.linkedin.com/in/joshdhansen/" target="_blank"><span><i class="fab fa-linkedin fa-3x"></i></span></a>
+</footer>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>

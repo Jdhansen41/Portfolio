@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/projects.css">
+    <link rel="stylesheet" href="/burger.css">
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" id="toggleMenu" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="/"><li>Home</li></a>
+      <a href="/projects"><li>Projects</li></a>
+      <a href="/contact"><li>Contact</li></a>
+    </ul>
+  </div>
+</nav>
+<main>
+  <h1>Projects</h1>
+  <div class="container-fluid" style="width: 100%;">
+    <div id="aboutProj">
+    <p>Below are a few of my personal projects I've worked on during the last few months, mainly on Codepen and cloud9. I also have repositories for other projects on GitHub. The projects I have on GitHub are mainly Node.js microservice apps like a url shortener, image search abstraction, upload file metadata viewer etc. I created using Glitch. I'm also currently working on a React job search result aggregator that displays JSON data using various APIs from jobsites like Glassdoor, Indeed, and LinkedIn (which will be added to this section upon completion). Click the links directly below to checkout my Glitch or GitHub profile.  </p>
+    </div>
+    <div style="width: 210px; margin: 0 auto;">
+    <a class="btn btn-outline-info profileBtn" href="https://glitch.com/@Jdhansen41" target="_blank">Glitch</a>
+    <a id="thisd" class="btn btn-outline-secondary profileBtn" href="https://github.com/Jdhansen41" target="_blank">GitHub</a>
+    </div>
+    <div class="row" id="projectArea"> 
+  </div>
+  </div>
+  
+</main>
+<footer>
+  <a id="contactMe" href="/contact">Contact Info</a>
+  <a href="https://github.com/Jdhansen41" target="_blank">
+  <span><i class="fab fa-github fa-3x"></i></span></a>
+  <a href="https://www.linkedin.com/in/joshdhansen/" target="_blank"><span><i class="fab fa-linkedin fa-3x"></i></span></a>
+  
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/projects.js"></script>
+
+  </body>
+</html>

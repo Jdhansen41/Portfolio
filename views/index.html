@@ -1,0 +1,96 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/burger.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav role="navigation">
+  <div id="menuToggle">
+    
+    <input type="checkbox" id="toggleMenu" />
+    
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    
+    <ul id="menu">
+      <a href="/"><li>Home</li></a>
+      <a href="/projects"><li>Projects</li></a>
+      <a href="/contact"><li>Contact</li></a>
+
+    </ul>
+    
+  </div>
+</nav>
+
+<header>
+  <h1>HDEV<span id="dev"><i class="fas fa-terminal"></i></span></h1>
+  <div id="contain">
+  <div id="intro">
+    <p>Personal, modern, mobile-friendly development with an attention to details is what HDEV Programming can offer you. If you're visiting this site, you're either looking for a new developer to add to your team or are looking for a custom built website. In any case, this site will aid you in your search as it showcases the various projects I've worked on as well as the technologies I'm familiar with. Feel free to contact me for any and all inquiries you may have!</p>
+    </div><hr>
+  <div id="aboutMe">
+    <h2 id="me">About Me</h2>
+    <p>
+      I have been studying and working towards becoming a Front End Developer for roughly a year now. As a self-taught developer, I utilized various online resources for curriculum including FreeCodeCamp, Udemy, Codecademy, and StackOverflow. I began my journey by creating a firm foundation on HTML, CSS, and vanilla Javascript and have branched out from there. I have experience with JSON API calls from various projects I've worked on (Bing Search, Twitch, Bing Maps, Geonames, AccuWeather, Reddit API). </p><p>While my main focus is on Front End Development, I also dove into learning Back End technologies like Node.js, MongoDB, and Express in order to create various hobby applications I was interested in. I have experience developing on Glitch.io, cloud9.io, and using git to structure and push my projects to GitHub. 
+    </p>
+    <!--Technologies list-->
+    <h3>Technologies</h3>
+    
+      <p><span><i class="fab fa-html5"></i></span> HTML5</p>
+    <p><span><i class="fab fa-css3"></i></span> CSS3</p>
+    <p><span><i class="fab fa-js-square"></i></span> Javascript and jQuery</p>
+    <p><span><i class="fab fa-node-js"></i></span> Node.js and Express</p>
+    <p><span><i class="fas fa-database"></i></span> MongoDB</p>
+    <p><span><i class="fas fa-paint-brush"></i></span> Bootsrap. Materialize, Semantic-UI, FontAwesome, GoogleFonts</p>
+    <p><span><i class="fab fa-react"></i></span> React (work-in-progress)</p>
+    <h3>Tools / Environments </h3>
+    <p><span><i class="fab fa-git-square"></i></span> Git (GitHub)</p>
+    <p><span><i class="fab fa-aws"></i></span> AWS (cloud9)</p>
+    <p><span><i class="far fa-keyboard"></i></span> Sublime, Atom, Glitch.io, CodePen.io</p>
+    <p>
+      <span>
+        <i class="fas fa-cloud"></i> 
+      </span>Heroku
+    </p>
+    <p style="margin-top: 50px;">
+      Click on the navbar in the top left corner to navigate around this site or click on my social media icons in the footer to learn more about me.
+    </p>
+    <p style="float: right;">
+      - HDEV Creator Josh Hansen
+    </p>
+  </div>
+  </div>
+</header>
+<footer>
+  <a id="contactMe" href="/contact">Contact Info</a>
+  <a href="https://github.com/Jdhansen41" target="_blank"><span><i class="fab fa-github fa-3x"></i></span></a>
+  <a href="https://www.linkedin.com/in/joshdhansen/" target="_blank"><span><i class="fab fa-linkedin fa-3x"></i></span></a>
+    </footer>
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
