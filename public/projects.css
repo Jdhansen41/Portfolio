@@ -20,6 +20,7 @@ footer{
 
 #projectArea{
   width: 80%;
+  min-width: 300px;
   padding: 20px;
   margin: 0 auto;
 }
