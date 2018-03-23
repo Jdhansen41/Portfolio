@@ -20,7 +20,7 @@ footer{
 
 #projectArea{
   width: 80%;
-  min-width: 360px;
+  min-width: 330px;
   padding: 20px;
   margin: 0 auto;
 }
@@ -49,7 +49,7 @@ footer{
 }
 
 #aboutProj{
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
 }
