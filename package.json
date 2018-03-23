@@ -1,20 +1,19 @@
 {
-  "name": "chat-example",
-  "version": "0.0.0",
-  "description": "",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
   "main": "server.js",
-  "author": "",
   "dependencies": {
-    "async": "~0.2.8",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
-    "express": "^3.2.6",
-    "socket.io": "~0.9.14"
-  },
-  "scripts": {
-    "start": "node server.js",
-    
+    "express": "^3.21.2",
+    "nodemailer": "^4.6.3"
   },
   "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
   "license": "ISC"
 }
