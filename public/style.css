@@ -1,3 +1,7 @@
+header{
+  padding: 20px;
+}
+
 h1{
   font-size: 90px;
   margin: 100px auto;
@@ -42,3 +46,4 @@ footer{
  width: 20px;
   height: 30px;
 }
+
