@@ -7,6 +7,8 @@ const app = express()
 const nodeMailer = require("nodemailer");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const flash = require("connect-flash");
+const session = require("express-session");
 
 
 // we've started you off with Express, 
@@ -15,21 +17,35 @@ const cors = require("cors");
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({extended: true}));
-
+app.use(flash());
 app.use(cors());
 
+app.use(require("express-session")({
+  secret: "Turbo",
+  resave: false,
+  saveUninitialized: false
+}));
+
+//Use EJS as template
+app.set("view engine", "ejs");
+
+app.use(function(req,res,next){
+  res.locals.success = req.flash("success");
+  next();
+})
+
 // http://expressjs.com/en/starter/basic-routing.html
-app.get("/", (request, response) => {
-  response.sendfile(__dirname + '/views/index.html')
+app.get("/", (req, res) => {
+  res.render("index");
 })
 
 app.get("/projects", (req, res) => {
-  res.sendfile(__dirname + "/views/projects.html")
+  res.render("projects");
 }
         )
 
 app.get("/contact", (req,res) =>{
-  res.sendfile(__dirname + "/views/contact.html")
+  res.render("contact");
 })
 
 //HANDLE EMAIL 
@@ -51,6 +67,7 @@ app.post('/email', function (req, res){
           if (error) {
              return  console.log(error);
           }
+          req.flash("success", "Email sent successfully!");
           console.log('Message %s sent: %s', info.messageId, info.response);
           res.redirect("/");
           });
